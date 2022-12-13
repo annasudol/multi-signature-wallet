@@ -3,7 +3,7 @@
 Wallet for Ethereum Virtual Machine, allows creating wallets  where transactions must be approved by at least 1 private key from the specified owners
 
 ## Features:
-A wallet can be created by calling `MultiSigWalletFactory.`sol` create a function with wallet addresses and required approvals
+A wallet can be created by calling `create` a function from `MultiSigWalletFactory`.sol` with params: wallet addresses and required approvals
 
 ## Contract deployed on Goerli Testnet network:
 ### 0xA7afD5eFD377B4ee96caB38380889D6AcB4a5e0f
