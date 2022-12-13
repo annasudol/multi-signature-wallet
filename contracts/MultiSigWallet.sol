@@ -101,7 +101,7 @@ contract MultiSigWallet {
         return false;
     }
 
-    function updateOwner(address owner, bool _isOwner) internal {
+    function updateOwner(address owner, bool _isOwner) public onlyWallet {
         isOwner[owner] = _isOwner;
         emit UpdateOwner(owner, _isOwner);
     }

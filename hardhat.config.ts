@@ -6,8 +6,6 @@ import "@nomicfoundation/hardhat-chai-matchers";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-import "./tasks";
-
 const ALCHEMY_PROJECT_ID = process.env.ALCHEMY_PROJECT_ID || '';
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';;
 const MNEMONIC = process.env.MNEMONIC || '';;

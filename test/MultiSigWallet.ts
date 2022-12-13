@@ -144,7 +144,7 @@ describe("MultiSigWallet", () => {
         ];
         const iface = new ethers.utils.Interface(ABI);
         it("Only contract can change owner", async () => {
-            // await expect(msw.updateOwner(accounts[4].address, true)).to.be.rejectedWith("only wallet");
+            await expect(msw.updateOwner(accounts[4].address, true)).to.be.rejectedWith("only wallet");
         });
         it("successfully add new owner", async () => {
             const call = iface.encodeFunctionData("updateOwner", [accounts[4].address, true]);
